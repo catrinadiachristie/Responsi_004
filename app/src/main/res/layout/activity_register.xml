@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Register" android:background="@mipmap/bgregis1">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" tools:layout_editor_absoluteY="8dp"
+            tools:layout_editor_absoluteX="8dp" android:layout_marginTop="20dp">
+        <TextView
+                android:text="Registrasi "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/txt_jdl_regis" android:textSize="30sp"
+                android:layout_marginLeft="120dp" android:textColor="#FFEB3B" android:textAllCaps="true"
+                android:textStyle="bold"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/txt_nama_regis" android:hint="Nama Lengkap" android:textSize="18sp"
+                android:layout_marginLeft="30dp" android:layout_marginTop="10dp" android:layout_marginRight="30dp"
+                android:textColor="#070707"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/txt_alamat_regis" android:hint="Alamat" android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp" android:layout_marginRight="30dp" android:textColor="#070707"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/txt_hp_regis" android:hint="Nomor Telepon" android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp" android:layout_marginRight="30dp" android:textColor="#070707"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/txt_email_regis" android:hint="Email" android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp" android:layout_marginRight="30dp" android:textColor="#070707"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/txt_username_regis" android:hint="Username" android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp" android:layout_marginRight="30dp" android:textColor="#070707"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/txt_pass_regis" android:hint="Password" android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp" android:layout_marginRight="30dp" android:textColor="#070707"/>
+        <Button
+                android:text="Registrasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/btn_regis" android:layout_marginLeft="120dp"
+                android:textSize="24sp" android:textStyle="bold" android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"/>
+    </LinearLayout>
+</LinearLayout>
