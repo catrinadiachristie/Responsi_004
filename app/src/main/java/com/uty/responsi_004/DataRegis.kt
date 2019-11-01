@@ -14,15 +14,15 @@ class DataRegis : AppCompatActivity() {
         val intent = intent
         val namareg = intent.getStringExtra("Nama")
         val alamatreg = intent.getStringExtra("Alamat")
-        val hpreg = intent.getStringExtra("Nomor HP")
+        val hpreg = intent.getStringExtra("Nomor Telpon")
         val emailreg = intent.getStringExtra("Email")
         val userregis = intent.getStringExtra("Username")
         val passregis = intent.getStringExtra("Password")
 
         textView4.text = "Nama                :" + namareg
         textView5.text = "Alamat              : " + alamatreg
-        textView6.text = "Nomor HP      : " + hpreg
-        textView7.text = "Email        : " + emailreg
+        textView6.text = "Nomor HP       : " + hpreg
+        textView7.text = "Email              : " + emailreg
         textView8.text = "Username      : " + userregis
         textView9.text = "Password      : " + passregis
     }

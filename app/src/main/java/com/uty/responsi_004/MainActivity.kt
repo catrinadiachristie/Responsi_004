@@ -24,7 +24,6 @@ class MainActivity : AppCompatActivity() {
             val datauser = username.text.toString()
             val datapass = password.text.toString()
 
-
             if (datauser.equals("cica") && datapass.equals("cica")) {
                 Toast.makeText(this, "Anda Sukses Login",
                     Toast.LENGTH_SHORT).show();

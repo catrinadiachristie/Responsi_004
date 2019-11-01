@@ -20,7 +20,7 @@ class Register : AppCompatActivity() {
         val alamatregis = findViewById<EditText>(R.id.txt_alamat_regis)
         val nomortlpregis = findViewById<EditText>(R.id.txt_hp_regis)
         val emailregis = findViewById<EditText>(R.id.txt_email_regis)
-        val usernmregis = findViewById<EditText>(R.id.txt_email_regis)
+        val usernmregis = findViewById<EditText>(R.id.txt_username_regis)
         val passregis = findViewById<EditText>(R.id.txt_pass_regis)
         val btnRegis = findViewById<Button>(R.id.btn_regis)
 
@@ -35,6 +35,7 @@ class Register : AppCompatActivity() {
             intent = Intent(this,DataRegis::class.java)
             intent.putExtra("Nama", datanamaregis)
             intent.putExtra("Alamat", dataalamatregis)
+            datanomortlpregis.toInt()
             intent.putExtra("Nomor Telpon", datanomortlpregis)
             intent.putExtra("Email", dataemailregis)
             intent.putExtra("Username", datauserregis)

@@ -1,5 +1,6 @@
 package com.uty.responsi_004
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -29,6 +30,17 @@ class ListProdukAdapter (val listProduk: ArrayList<Produk>) : RecyclerView.Adapt
         Glide.with(holder.itemView.context)
             .load(produk.gambarpro)
             .into(holder.gbr)
+        //toasnya bisa mas wkwk
+//        holder.itemView.setOnClickListener(View.OnClickListener { View ->
+//            Toast.makeText(holder.itemView.context,
+//                "Kamu milih: " + listProduk[holder.adapterPosition].namapro, Toast.LENGTH_LONG).show()
+//        }
+//        )
+        holder.itemView.setOnClickListener() {
+            val intent = Intent (holder.itemView.context, DetailActivity::class.java)
+            intent.putExtra("nomor", listProduk[holder.adapterPosition].namapro)
+            holder.itemView.context.startActivity(intent)
+        }
     }
 
     inner class ProdukViewHolder(itemView: View):RecyclerView.ViewHolder(itemView) {

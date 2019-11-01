@@ -25,5 +25,7 @@ class Home : AppCompatActivity() {
         rvProduk.layoutManager = LinearLayoutManager(this)
         val produkAdapter = ListProdukAdapter(list)
         rvProduk.adapter = produkAdapter
+
+
     }
 }
